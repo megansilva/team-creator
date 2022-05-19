@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+
+  "name": "team-creator",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megansilva/team-creator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megansilva/team-creator/issues"
+  },
+  "homepage": "https://github.com/megansilva/team-creator#readme"
+}
