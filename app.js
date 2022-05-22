@@ -73,7 +73,7 @@ function addTeam() {
                     }
 
                     employees.push(newMem);
-                    addHTML(newMem)
+                    addHtml(newMem) 
                         .then(function () {
                             if (moreMem === "Yes") {
                                 addTeam();
@@ -81,6 +81,7 @@ function addTeam() {
                                 finishHtml();
                             }
                         });
+                    
                 });
 
 
@@ -124,7 +125,7 @@ function addHtml(employ) {
     return new Promise(function (resolve, reject) {
         const name = employ.getName();
         const role = employ.getRole();
-        const ID = employ.getId();
+        const ID = employ.getID();
         const email = employ.getEmail();
         let data = "";
         if (role === "Manager") {
@@ -160,7 +161,7 @@ function addHtml(employ) {
             </div>
         </div>`;
         } else {
-            const school = employ.getschool();
+            const school = employ.getSchool();
             date = `<div class="col-4 mt-4">
             <div class="card h-100">
                 <div class="card-header">
