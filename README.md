@@ -11,7 +11,7 @@
 </ul>
 
 ## Demo Video
-[demo video](https://drive.google.com/file/d/1Mx96sHTQop63GH99cy7VlJolrwtKaD7o/view)
+[Team-creator Video](https://drive.google.com/file/d/1Mx96sHTQop63GH99cy7VlJolrwtKaD7o/view)
 
 
 ## Screenshots
