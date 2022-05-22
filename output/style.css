@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+#navtext {
+    color: white;
+    font-size: 40px;
+}
+
+#navbar {
+    background-color: cadetblue;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-header {
+    color: white;
+    background-color: rgb(202, 81, 81);
+}
