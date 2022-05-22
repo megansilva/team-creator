@@ -19,5 +19,3 @@
 <img src="./assets/images/screenshot.jpg" alt="Screenshot of the app fully functioning with the team members" />
 
 
-## Link
-[team-creator]()
