@@ -12,7 +12,8 @@
 
 ## Demo Video
 <p> Watch the demo video by clicking the link!
-<p>[Demo Video](https://drive.google.com/file/d/1vjhKOn4KYI-TeKcG34COcG4KNnO3zJ_s/view)
+
+[Demo](https://drive.google.com/file/d/1vjhKOn4KYI-TeKcG34COcG4KNnO3zJ_s/view)
 
 ## Screenshots
 <img src="./assets/images/screenshot.jpg" alt="Screenshot of the app fully functioning with the team members" />
