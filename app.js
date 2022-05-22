@@ -206,5 +206,8 @@ function addHtml(employ) {
 
         console.log("end");
     }
+
 }
+
+initApp();
 
