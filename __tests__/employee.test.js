@@ -12,10 +12,10 @@ describe ("Employee", () => {
         expect(e.name).toBe(name);
     });
 
-    it ("can set id for the constructed argument", () => {
+    it ("can set id for the employee", () => {
         const testInfo = 100;
         const e = new Employee("Foo", testInfo);
-        expect(e.id).toBe(testInfo);
+        expect(e.ID).toBe(testInfo);
     });
 
     it ("can set the email for the constructed argument", () => {
