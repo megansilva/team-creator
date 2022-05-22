@@ -98,13 +98,13 @@ function startHtml() {
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Meet the Team</title>
     </head>
     
     <body>
         <header>
-            <nav class="nav bg-danger mb-5" id="navbar">
+            <nav class="nav mb-5" id="navbar">
                 <span class="nav-brand mb-0 h1 w-100 text-center" id="navtext">Team Profile</span>
             </nav>
         </header>
@@ -130,8 +130,8 @@ function addHtml(employ) {
         let data = "";
         if (role === "Manager") {
             const officeNum = employ.getOfficeNumber();
-            data = `<div class="col-4 mt-4">
-            <div class="card h-100">
+            data = `<div class="col-4">
+            <div class="card mx-auto mb-3">
                 <div class="card-header">
                     <h3>${name}</h3>
                     <h4>Manager</h4><i class="glyphicon glyphicon-user"></i>
@@ -146,8 +146,8 @@ function addHtml(employ) {
         </div>`;
         } else if (role === "Engineer") {
             const gitH = employ.getGitHub();
-            data = `<div class="col-4 mt-4">
-            <div class="card h-100">
+            data = `<div class="col-4">
+            <div class="card mx-auto mb-3">
                 <div class="card-header">
                     <h3>${name}</h3>
                     <h4>Engineer</h4><i class="glyphicon glyphicon-download-alt"></i>
@@ -162,8 +162,8 @@ function addHtml(employ) {
         </div>`;
         } else {
             const school = employ.getSchool();
-            date = `<div class="col-4 mt-4">
-            <div class="card h-100">
+            data = `<div class="col-4">
+            <div class="card mx-auto mb-3">
                 <div class="card-header">
                     <h3>${name}</h3>
                     <h4>Intern</h4><i class="glyphicon glyphicon-list-alt"></i>
@@ -186,19 +186,18 @@ function addHtml(employ) {
             return resolve();
         });
     });
+}
 
-
-
-    function finishHtml() {
-        const html = `</div>
+function finishHtml() {
+    const html = `</div>
 
         </div>
-    </main>
-</body>
+        </main>
+    </body>
 
-</html>`;
+    </html>`;
 
-        fs.appendFile("./output/team.html", data, function (err) {
+        fs.appendFile("./output/team.html", html, function (err) {
             if (err) {
                 console.log(err);
             };
@@ -206,7 +205,7 @@ function addHtml(employ) {
         });
 
         console.log("end");
-    }
+    
 
 }
 
