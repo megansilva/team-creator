@@ -129,7 +129,7 @@ function addHtml(employ) {
         const email = employ.getEmail();
         let data = "";
         if (role === "Manager") {
-            const officeNum = employ.getOfficeNum();
+            const officeNum = employ.getOfficeNumber();
             data = `<div class="col-4 mt-4">
             <div class="card h-100">
                 <div class="card-header">
