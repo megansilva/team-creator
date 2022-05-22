@@ -42,7 +42,7 @@ function addTeam() {
             let memRole = "";
             if (role === "Manager") {
                 memRole = "Office Number";
-            } else if (role === engineer) {
+            } else if (role === "Engineer") {
                 memRole = "Github";
             } else {
                 memRole = "School";
@@ -67,13 +67,13 @@ function addTeam() {
                     if (role === "Manager") {
                         newMem = new manager(name, ID, email, memRole);
                     } else if (role === "Engineer") {
-                        newMem = new Engineer(name, ID, email, memRole);
+                        newMem = new engineer(name, ID, email, memRole);
                     } else {
-                        newMem = new intern(role, ID, Email, memRole)
+                        newMem = new intern(role, ID, email, memRole)
                     }
 
                     employees.push(newMem);
-                    addHtml(newMem) 
+                    addHtml(newMem)
                         .then(function () {
                             if (moreMem === "Yes") {
                                 addTeam();
@@ -81,9 +81,9 @@ function addTeam() {
                                 finishHtml();
                             }
                         });
-                    
-                });
 
+                });
+            
 
         });
 }
@@ -145,7 +145,7 @@ function addHtml(employ) {
             </div>
         </div>`;
         } else if (role === "Engineer") {
-            const gitH = employ.getgitH();
+            const gitH = employ.getGitHub();
             data = `<div class="col-4 mt-4">
             <div class="card h-100">
                 <div class="card-header">
@@ -190,13 +190,13 @@ function addHtml(employ) {
 
 
     function finishHtml() {
-        const html = ` </div>
+        const html = `</div>
 
-            </div>
-        </main>
-    </body>
+        </div>
+    </main>
+</body>
 
-    </html>`;
+</html>`;
 
         fs.appendFile("./output/team.html", data, function (err) {
             if (err) {
